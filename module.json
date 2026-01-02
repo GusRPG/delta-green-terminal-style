@@ -1,0 +1,25 @@
+{
+  "id": "delta-green-terminal-style",
+  "title": "Delta Green Terminal Style",
+  "description": "Terminal style for Delta Green Foundry VTT system.",
+  "version": "1.0.2",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "authors": [
+    {
+      "name": "GusRPG"
+    }
+  ],
+  "esmodules": [
+    "scripts/terminal-effects.js"
+  ],
+  "styles": [
+    "styles/terminal-style.css"
+  ],
+  "url": "https://github.com/GusRPG/delta-green-terminal-style",
+  "manifest": "https://raw.githubusercontent.com/GusRPG/delta-green-terminal-style/main/module.json",
+  "download": "https://github.com/GusRPG/delta-green-terminal-style/archive/refs/heads/main.zip"
+  }
