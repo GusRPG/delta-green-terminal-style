@@ -7,7 +7,7 @@
 
 # 💾 BURN YOUR EYES
 ## Classic Retro Terminal Style  
-### for Pathfinder 1st Edition 
+### for Delta Green
 
 
 > **Burn your eyes with a classic retro terminal style!**  
