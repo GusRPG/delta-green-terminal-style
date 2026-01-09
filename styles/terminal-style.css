@@ -5162,3 +5162,449 @@ input.labeled-resource-checkbox[type="checkbox"]::before {
     content: none !important;
     display: none !important;
 }
+
+/* =================================================
+   FIX PARA HEADING-LINK ELLIPSIS - TABLA DE CONTENIDOS
+   ================================================= */
+
+/* Fix para heading-link con data-action="goToHeading" */
+a.heading-link.ellipsis,
+a.heading-link.ellipsis[data-action="goToHeading"],
+a[data-action="goToHeading"].ellipsis {
+    background-color: transparent !important;
+    background: transparent !important;
+    color: var(--terminal-primary) !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Hover state - TEXTO AMARILLO CON GLOW */
+a.heading-link.ellipsis:hover,
+a.heading-link.ellipsis[data-action="goToHeading"]:hover,
+a[data-action="goToHeading"].ellipsis:hover {
+    background-color: transparent !important;
+    color: var(--terminal-warning) !important;
+    text-shadow: 0 0 2px var(--terminal-warning) !important;
+}
+
+/* Si está dentro de tablas */
+table a.heading-link.ellipsis,
+table a[data-action="goToHeading"].ellipsis,
+td a.heading-link.ellipsis,
+td a[data-action="goToHeading"].ellipsis {
+    background-color: transparent !important;
+    background: transparent !important;
+    color: var(--terminal-primary) !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+}
+
+table a.heading-link.ellipsis:hover,
+table a[data-action="goToHeading"].ellipsis:hover,
+td a.heading-link.ellipsis:hover,
+td a[data-action="goToHeading"].ellipsis:hover {
+    color: var(--terminal-warning) !important;
+    text-shadow: 0 0 2px var(--terminal-warning) !important;
+}
+
+/* Si está dentro de prosemirror/editor */
+.editor-content a.heading-link.ellipsis,
+div[data-engine="prosemirror"] a.heading-link.ellipsis,
+.editor-content a[data-action="goToHeading"].ellipsis {
+    background-color: transparent !important;
+    color: var(--terminal-primary) !important;
+    font-family: var(--terminal-font) !important;
+}
+
+.editor-content a.heading-link.ellipsis:hover,
+div[data-engine="prosemirror"] a.heading-link.ellipsis:hover {
+    color: var(--terminal-warning) !important;
+    text-shadow: 0 0 2px var(--terminal-warning) !important;
+}
+
+/* Fix para cualquier div.ellipsis que sea parte de heading */
+div.ellipsis a.heading-link,
+div.ellipsis a[data-action="goToHeading"] {
+    background-color: transparent !important;
+    color: var(--terminal-primary) !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+}
+
+div.ellipsis a.heading-link:hover,
+div.ellipsis a[data-action="goToHeading"]:hover {
+    color: var(--terminal-warning) !important;
+    text-shadow: 0 0 2px var(--terminal-warning) !important;
+}
+
+/* =================================================
+   FIX PARA INPUTS EN POTENCY LIST (SHEET-LIST)
+   ================================================= */
+
+/* Sheet-list potency - contenedor */
+.sheet-list.potency,
+div.sheet-list.potency {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    background-image: none !important;
+    font-family: var(--terminal-font) !important;
+}
+
+/* List-header dentro de potency */
+.sheet-list.potency .list-header,
+.sheet-list.potency .list-header.row-content {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    background-image: none !important;
+    color: var(--terminal-primary) !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+    border-bottom: 2px solid var(--terminal-border) !important;
+    padding: 8px !important;
+}
+
+/* Divs dentro del list-header (títulos de columnas) */
+.sheet-list.potency .list-header .flex,
+.sheet-list.potency .list-header .small {
+    background-color: transparent !important;
+    color: var(--terminal-primary) !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+    font-weight: bold !important;
+    text-shadow: var(--terminal-text-shadow) !important;
+}
+
+/* List-content */
+.sheet-list.potency .list-content {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    background-image: none !important;
+}
+
+/* List-row (cada fila de potency) */
+.sheet-list.potency .list-row {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    background-image: none !important;
+    border-bottom: 1px solid var(--terminal-border) !important;
+    padding: 8px 0 !important;
+}
+
+/* Row-content dentro de list-row */
+.sheet-list.potency .list-row .row-content {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    background-image: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 4px 0 !important;
+}
+
+/* Divs flex dentro de row-content */
+.sheet-list.potency .list-row .row-content .flex {
+    background-color: transparent !important;
+    flex: 1 !important;
+}
+
+/* === INPUTS DENTRO DE POTENCY - ULTRA ESPECÍFICO === */
+
+/* TODOS los inputs de texto en potency list */
+.sheet-list.potency input[type="text"],
+.sheet-list.potency .list-row input[type="text"],
+.sheet-list.potency .list-content input[type="text"],
+.sheet-list.potency input[data-action="editList"],
+.sheet-list.potency input[data-ipath="cost"],
+.sheet-list.potency input[data-ipath="initial"],
+.sheet-list.potency input[data-ipath="property"],
+.sheet-list.potency input[data-ipath="value"],
+.sheet-list.potency input[data-ipath="description"],
+.sheet-list.potency .flex input[type="text"] {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    background-image: none !important;
+    color: var(--terminal-primary) !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+    border: 1px solid var(--terminal-border) !important;
+    padding: 4px 8px !important;
+    width: 100% !important;
+    -webkit-text-fill-color: var(--terminal-primary) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Focus state para inputs */
+.sheet-list.potency input[type="text"]:focus {
+    border-color: var(--terminal-primary) !important;
+    box-shadow: 0 0 5px var(--terminal-primary) !important;
+    outline: none !important;
+}
+
+/* Placeholder para inputs */
+.sheet-list.potency input[type="text"]::placeholder {
+    color: var(--terminal-dim) !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: var(--terminal-dim) !important;
+}
+
+/* === CHECKBOX DENTRO DE POTENCY - SMALL === */
+
+/* Checkbox "Único" (single) */
+.sheet-list.potency input[type="checkbox"],
+.sheet-list.potency .small input[type="checkbox"],
+.sheet-list.potency input[data-ipath="single"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px !important;
+    min-height: 18px !important;
+    max-width: 18px !important;
+    max-height: 18px !important;
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    border: 2px solid var(--terminal-border) !important;
+    cursor: pointer !important;
+    position: relative !important;
+    transition: all 0.3s ease !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+}
+
+/* Estado sin marcar */
+.sheet-list.potency input[type="checkbox"]:not(:checked) {
+    border-color: var(--terminal-dim) !important;
+    box-shadow: none !important;
+}
+
+/* Estado marcado - VERDE CON GLOW */
+.sheet-list.potency input[type="checkbox"]:checked {
+    border-color: var(--terminal-primary) !important;
+    box-shadow: 0 0 4px var(--terminal-primary), 
+                0 0 8px var(--terminal-primary) !important;
+    background-color: var(--terminal-bg) !important;
+}
+
+/* Cuadrado iluminado cuando está marcado */
+.sheet-list.potency input[type="checkbox"]:checked::after {
+    content: "" !important;
+    position: absolute !important;
+    background-color: var(--terminal-primary) !important;
+    background: var(--terminal-primary) !important;
+    width: 12px !important;
+    height: 12px !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    box-shadow: 0 0 3px var(--terminal-primary), 
+                0 0 6px var(--terminal-primary) !important;
+}
+
+/* Hover */
+.sheet-list.potency input[type="checkbox"]:hover {
+    border-color: var(--terminal-primary) !important;
+    box-shadow: 0 0 3px var(--terminal-primary) !important;
+}
+
+/* === LIST CONTROLS (botones de eliminar) === */
+
+/* List-controls container */
+.sheet-list.potency .list-controls {
+    background-color: transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+
+/* Botón de eliminar */
+.sheet-list.potency .list-controls a.list-control,
+.sheet-list.potency a[data-action="listDelete"] {
+    background-color: transparent !important;
+    color: var(--terminal-error) !important;
+    cursor: pointer !important;
+    padding: 4px 8px !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+}
+
+.sheet-list.potency .list-controls a.list-control:hover,
+.sheet-list.potency a[data-action="listDelete"]:hover {
+    color: var(--terminal-error) !important;
+    text-shadow: 0 0 3px var(--terminal-error) !important;
+}
+
+/* Icono dentro del botón eliminar */
+.sheet-list.potency .list-controls a i,
+.sheet-list.potency a[data-action="listDelete"] i {
+    color: inherit !important;
+}
+
+/* === BOTÓN ADD POTENCY === */
+
+/* Botón de agregar potency */
+.sheet-list.potency button.add-potency,
+button[data-action="listCreate"][data-path="system.potency"] {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    color: var(--terminal-primary) !important;
+    border: 1px solid var(--terminal-border) !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+    text-shadow: var(--terminal-text-shadow) !important;
+    transition: all 0.3s ease !important;
+    padding: 8px 16px !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    margin-top: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+}
+
+/* Hover state */
+.sheet-list.potency button.add-potency:hover,
+button[data-action="listCreate"][data-path="system.potency"]:hover {
+    background-color: var(--terminal-primary) !important;
+    color: var(--terminal-bg) !important;
+    box-shadow: var(--terminal-glow) !important;
+    border-color: var(--terminal-primary) !important;
+}
+
+/* Icono dentro del botón */
+.sheet-list.potency button.add-potency i,
+button[data-action="listCreate"] i {
+    color: inherit !important;
+}
+
+/* === INPUT DESCRIPTION (segunda fila) === */
+
+/* Row-content para description (más ancho) */
+.sheet-list.potency .list-row .row-content:nth-child(2) {
+    margin-top: 4px !important;
+}
+
+/* Input description específico */
+.sheet-list.potency input[data-ipath="description"] {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    color: var(--terminal-text) !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+    border: 1px solid var(--terminal-border) !important;
+    padding: 6px 8px !important;
+    width: 100% !important;
+    -webkit-text-fill-color: var(--terminal-text) !important;
+}
+
+.sheet-list.potency input[data-ipath="description"]:focus {
+    border-color: var(--terminal-primary) !important;
+    box-shadow: 0 0 5px var(--terminal-primary) !important;
+}
+
+.sheet-list.potency input[data-ipath="description"]::placeholder {
+    color: var(--terminal-dim) !important;
+    opacity: 1 !important;
+}
+
+/* === TOOLTIPS === */
+
+/* Elementos con tooltip */
+.sheet-list.potency [data-tooltip] {
+    position: relative !important;
+    cursor: help !important;
+}
+
+/* === ALTERNANCIA DE FILAS (opcional) === */
+
+/* Filas alternas con ligero tinte */
+.sheet-list.potency .list-row:nth-child(odd) {
+    background-color: rgba(0, 153, 0, 0.02) !important;
+}
+
+.sheet-list.potency .list-row:nth-child(even) {
+    background-color: var(--terminal-bg) !important;
+}
+
+/* === NORMALIZACIÓN GENERAL === */
+
+/* Asegurar que todo dentro de potency use la fuente terminal */
+.sheet-list.potency * {
+    font-family: var(--terminal-font) !important;
+}
+
+/* Divs pequeños */
+.sheet-list.potency .small {
+    background-color: transparent !important;
+    font-size: calc(var(--terminal-font-size) - 2px) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* =================================================
+   FIX MINIMALISTA PARA LOCATIONS - SOLO BACKGROUND
+   ================================================= */
+
+/* Contenedor principal de locations - solo background */
+.locations,
+div.locations {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    background-image: none !important;
+}
+
+/* Location individual - solo background */
+.locations .location,
+.location[data-key] {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    background-image: none !important;
+}
+
+/* Location-values - solo background */
+.location .location-values,
+.locations .location .location-values {
+    background-color: transparent !important;
+}
+
+/* Label - solo background y fuente */
+.location .location-values label,
+.locations .location label {
+    background-color: transparent !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+}
+
+/* Link dentro del label - solo background y fuente */
+.location .location-values label a,
+.locations .location label a,
+a.damage-armour {
+    background-color: transparent !important;
+    background: transparent !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+}
+
+/* Armour value - solo background y fuente */
+.location .location-values a.armour-value,
+.locations a.armour-value,
+a.armour-value {
+    background-color: transparent !important;
+    background: transparent !important;
+    font-family: var(--terminal-font) !important;
+    font-size: var(--terminal-font-size) !important;
+}
+
+/* Field que contiene locations - solo background */
+.field .locations,
+div.field .locations {
+    background-color: var(--terminal-bg) !important;
+    background: var(--terminal-bg) !important;
+    background-image: none !important;
+}
