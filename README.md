@@ -7,18 +7,20 @@
 
 # 💾 BURN YOUR EYES
 ## Classic Retro Terminal Style  
-### for Pathfinder 1st Edition 
-
+### for Delta Green
 
 > **Burn your eyes with a classic retro terminal style!**  
 > Transform Foundry VTT into a neon-soaked cyberpunk console inspired by classic sci-fi hacking aesthetics.  
 > Glowing text and animated cursors immerse you in a full retro-futuristic vibe while letting you customize every visual detail.
 
+<img width="1739" height="1440" alt="dg1" src="https://github.com/user-attachments/assets/f57c34c4-1e42-4263-b019-52ee108c1d57" />
+
 ---
 
 ## 🖥️ SYSTEM INTERFACE PREVIEW
 
-<img width="1779" height="1440" alt="a2" src="https://github.com/user-attachments/assets/218b9760-f9f5-4463-abe9-d1f0c9f5496d" />
+<img width="1704" height="1440" alt="dg2" src="https://github.com/user-attachments/assets/bb2d1c92-4126-4814-b168-76593a2e1bbb" />
+<img width="2020" height="1440" alt="dg5" src="https://github.com/user-attachments/assets/01d2e851-2874-4811-aea7-3dab6b6f0fad" />
 
 ---
 
@@ -26,7 +28,6 @@
 ### Key Features & Customizations  
 *from the Foundry VTT Core Settings Panel – look for the module name :*
 
-<img width="1957" height="1440" alt="a4" src="https://github.com/user-attachments/assets/d3b7500d-e361-4599-84dd-564b81a9543e" />
 
 ---
 
@@ -48,9 +49,8 @@ Choose from a wide palette of classic terminal colors, including:
 💡 **Glow intensity is fully adjustable** for buttons, form backgrounds, and other UI elements.
 
 
-<img width="1766" height="1440" alt="a3" src="https://github.com/user-attachments/assets/3f737ae0-abb1-4f8e-bef9-c02496cb2982" />
+<img width="1819" height="1440" alt="dg3" src="https://github.com/user-attachments/assets/ed788c44-1c7f-4404-8e14-04138f66df58" />
 
-<img width="1771" height="1440" alt="a1" src="https://github.com/user-attachments/assets/33e2ade2-4d4d-47af-a0a0-05aec4a4f3b8" />
 
 ---
 
@@ -58,6 +58,9 @@ Choose from a wide palette of classic terminal colors, including:
 ### Rest your optics. Enter the void.
 
 You can relax your eyes also with the **Void Black theme*
+
+<img width="1726" height="1440" alt="dg4" src="https://github.com/user-attachments/assets/5d58edb7-efe7-43e5-af4e-be188fae4401" />
+
 ---
 
 ## 🔠 TERMINAL FONTS & TYPOGRAPHY
