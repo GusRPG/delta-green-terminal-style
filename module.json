@@ -2,11 +2,11 @@
   "id": "delta-green-terminal-style",
   "title": "Delta Green Terminal Style",
   "description": "Terminal style for Delta Green Foundry VTT system.",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "compatibility": {
     "minimum": "13",
-    "verified": "13",
-    "maximum": "13"
+    "verified": "14",
+    "maximum": "15"
   },
   "authors": [
     {
